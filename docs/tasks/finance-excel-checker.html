@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Finance Excel Checker</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <main class="container">
+    <p><a href="../index.html">← Назад на головну</a></p>
+
+    <header class="hero">
+      <p class="badge">Module 01</p>
+      <h1>Finance Excel Checker</h1>
+      <p class="subtitle">
+        Практичне завдання: Git + GitHub + Codex CLI + Excel/CSV
+        для фінансового відділу.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Мета</h2>
+      <p>
+        Навчитися створювати локальний Git-проєкт, працювати з GitHub,
+        використовувати окрему гілку для змін і застосовувати Codex CLI
+        для створення простого інструмента перевірки фінансових даних.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Що треба зробити</h2>
+      <ol>
+        <li>Створити локальний проєкт <code>finance-excel-checker</code>.</li>
+        <li>Додати файл <code>payments.csv</code> з фінансовими даними.</li>
+        <li>Зробити перший commit.</li>
+        <li>Створити окрему Git-гілку.</li>
+        <li>Запустити Codex CLI.</li>
+        <li>Попросити Codex створити Python-скрипт перевірки платежів.</li>
+        <li>Перевірити результат.</li>
+        <li>Оформити README.</li>
+        <li>Запушити проєкт на GitHub.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>Структура проєкту студента</h2>
+      <pre><code>finance-excel-checker/
+├── payments.csv
+├── check_payments.py
+├── README.md
+└── .gitignore</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 1. Створити проєкт</h2>
+      <pre><code>mkdir finance-excel-checker
+cd finance-excel-checker
+git init
+git branch -M main</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 2. Додати CSV-файл</h2>
+      <p>
+        Створи файл <code>payments.csv</code> або завантаж приклад:
+        <a href="../examples/payments.csv">payments.csv</a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Крок 3. Перший commit</h2>
+      <pre><code>git add .
+git commit -m "Add sample payments data"</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 4. Створити окрему гілку</h2>
+      <pre><code>git switch -c add-payment-validation</code></pre>
+      <p>
+        Важливо: зміни через Codex CLI краще робити не в <code>main</code>,
+        а в окремій гілці.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>Крок 5. Запустити Codex CLI</h2>
+      <pre><code>codex</code></pre>
+      <p>Спочатку попроси Codex пояснити проєкт:</p>
+      <pre><code>Can you give me a brief summary of this project?</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 6. Завдання для Codex</h2>
+      <p>Скопіюй цей prompt у Codex CLI:</p>
+      <pre><code>Create a simple Python script called check_payments.py that reads payments.csv and checks for common finance data issues: missing invoice numbers, negative amounts, zero amounts, and possible duplicate payments. The script should print a clear report in the terminal.</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 7. Запустити перевірку</h2>
+      <pre><code>python3 check_payments.py</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 8. Перевірити зміни Git</h2>
+      <pre><code>git status
+git diff</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 9. Commit результату</h2>
+      <pre><code>git add .
+git commit -m "Add payment validation script"</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Крок 10. README</h2>
+      <p>Попроси Codex створити README:</p>
+      <pre><code>Create a README.md file for this project. Explain what the project does, what files it contains, and how to run the payment validation script.</code></pre>
+      <p>Після цього:</p>
+      <pre><code>git add README.md
+git commit -m "Add project README"</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>Що треба здати</h2>
+      <ul>
+        <li>посилання на GitHub-репозиторій;</li>
+        <li>файл <code>payments.csv</code>;</li>
+        <li>файл <code>check_payments.py</code>;</li>
+        <li>файл <code>README.md</code>;</li>
+        <li>історію мінімум з трьох commit;</li>
+        <li>скріншот запуску <code>python3 check_payments.py</code>.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
