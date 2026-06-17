@@ -1,0 +1,13 @@
+# macOS
+.DS_Store
+
+# Local ChatGPT project prompts
+Prompt_ChatGPT_Prompt_party/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local environment
+.env
+.venv/
