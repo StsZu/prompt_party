@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Як працювати з prompt_party</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <p><a href="index.html">← Назад на головну</a></p>
+
+    <header class="hero">
+      <p class="badge">Інструкція</p>
+      <h1>Як працювати з prompt_party</h1>
+      <p class="subtitle">
+        Інструкція для студентів і викладача: як використовувати навчальний репозиторій,
+        виконувати завдання, створювати власні проєкти та публікувати результати.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Що таке prompt_party</h2>
+      <p>
+        <strong>prompt_party</strong> — це навчальний репозиторій і сайт з практичними
+        завданнями для студентів. Він використовується для навчання роботі з Git,
+        GitHub, GitHub Pages, Codex CLI, Excel/CSV-даними та простими AI-автоматизаціями.
+      </p>
+
+      <p>
+        Головний репозиторій:
+        <br />
+        <a href="https://github.com/StsZu/prompt_party" target="_blank">
+          https://github.com/StsZu/prompt_party
+        </a>
+      </p>
+
+      <p>
+        Навчальний сайт:
+        <br />
+        <a href="https://stszu.github.io/prompt_party/" target="_blank">
+          https://stszu.github.io/prompt_party/
+        </a>
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>1. Для чого потрібен prompt_party</h2>
+      <p>
+        Репозиторій <code>prompt_party</code> — це головний навчальний портал.
+      </p>
+
+      <p>У ньому зберігаються:</p>
+
+      <ul>
+        <li>практичні завдання для студентів;</li>
+        <li>HTML-сторінки з інструкціями;</li>
+        <li>приклади CSV/Excel-файлів;</li>
+        <li>HTML-презентації;</li>
+        <li>посилання на студентські роботи;</li>
+        <li>матеріали для навчання Git, GitHub і Codex CLI.</li>
+      </ul>
+
+      <p>
+        Важливо: <code>prompt_party</code> — це не місце, де кожен студент напряму
+        змінює головний сайт. Це центральний навчальний репозиторій.
+        Студенти виконують завдання у власних репозиторіях, а в
+        <code>prompt_party</code> можуть додаватися тільки посилання на готові роботи
+        або окремі матеріали після перевірки.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. Як студент працює із завданням</h2>
+      <p>
+        Студент відкриває навчальний сайт:
+      </p>
+
+      <pre><code>https://stszu.github.io/prompt_party/</code></pre>
+
+      <p>
+        Потім обирає практичне завдання, наприклад:
+      </p>
+
+      <pre><code>Finance Excel Checker</code></pre>
+
+      <p>
+        Після цього студент виконує завдання у власному локальному проєкті
+        на своєму комп’ютері.
+      </p>
+
+      <p>Приклад власного проєкту студента:</p>
+
+      <pre><code>finance-excel-checker/
+├── payments.csv
+├── check_payments.py
+├── README.md
+└── .gitignore</code></pre>
+
+      <p>Студент повинен:</p>
+
+      <ol>
+        <li>створити локальну папку проєкту;</li>
+        <li>ініціалізувати Git;</li>
+        <li>додати CSV-файл з фінансовими даними;</li>
+        <li>зробити перший commit;</li>
+        <li>створити окрему Git-гілку;</li>
+        <li>запустити Codex CLI;</li>
+        <li>створити Python-скрипт для перевірки фінансових даних;</li>
+        <li>перевірити результат;</li>
+        <li>оформити README;</li>
+        <li>запушити роботу на GitHub.</li>
+      </ol>
+    </section>
+
+    <section class="card">
+      <h2>3. Де студент зберігає свою роботу</h2>
+      <p>
+        Кожен студент створює власний GitHub-репозиторій.
+      </p>
+
+      <p>Наприклад:</p>
+
+      <pre><code>https://github.com/student-name/finance-excel-checker</code></pre>
+
+      <p>
+        У цьому репозиторії студент зберігає свою практичну роботу.
+        Основний репозиторій <code>prompt_party</code> не треба копіювати
+        і не треба змінювати напряму для виконання першого завдання.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>4. Що студент здає</h2>
+      <p>Після виконання завдання студент здає:</p>
+
+      <ul>
+        <li>посилання на GitHub-репозиторій;</li>
+        <li>посилання на GitHub Pages-презентацію, якщо вона створена;</li>
+        <li>скріншот запуску Python-скрипта;</li>
+        <li>короткий опис, що було зроблено.</li>
+      </ul>
+
+      <p>Приклад:</p>
+
+      <pre><code>Студент: Олена Шуть
+Проєкт: Finance Excel Checker
+GitHub: https://github.com/username/finance-excel-checker
+Сайт: https://username.github.io/finance-excel-checker/
+Опис: створено CSV-файл з платежами, Python-скрипт перевірки помилок, README та історію комітів.</code></pre>
+    </section>
+
+    <section class="card">
+      <h2>5. Як студент може зробити HTML-презентацію</h2>
+      <p>
+        Після виконання основного завдання студент може створити HTML-презентацію
+        у своєму власному репозиторії.
+      </p>
+
+      <p>Для цього в репозиторії студента можна створити папку:</p>
+
+      <pre><code>docs/
+├── index.html
+└── style.css</code></pre>
+
+      <p>
+        Потім у GitHub треба увімкнути GitHub Pages:
+      </p>
+
+      <pre><code>Settings → Pages → Deploy from a branch → main → /docs</code></pre>
+
+      <p>
+        Після цього студент отримає власний сайт-презентацію:
+      </p>
+
+      <pre><code>https://username.github.io/finance-excel-checker/</code></pre>
+
+      <p>На цій HTML-сторінці студент може коротко показати:</p>
+
+      <ul>
+        <li>назву проєкту;</li>
+        <li>мету роботи;</li>
+        <li>структуру файлів;</li>
+        <li>що робить Python-скрипт;</li>
+        <li>приклади знайдених помилок;</li>
+        <li>посилання на GitHub-репозиторій;</li>
+        <li>висновок.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>6. Чи треба студентам додавати свої презентації прямо в prompt_party</h2>
+      <p>
+        На першому етапі — ні.
+      </p>
+
+      <p>Правильна модель така:</p>
+
+      <pre><code>prompt_party = головний навчальний портал
+student repo = робота конкретного студента
+student GitHub Pages = презентація конкретного студента</code></pre>
+
+      <p>
+        У <code>prompt_party</code> краще додавати не всі файли студентів,
+        а тільки посилання на їхні роботи.
+      </p>
+
+      <p>Наприклад:</p>
+
+      <pre><code>Олена Шуть
+Проєкт: Finance Excel Checker
+GitHub: https://github.com/username/finance-excel-checker
+Сайт: https://username.github.io/finance-excel-checker/</code></pre>
+
+      <p>
+        Так головний сайт залишиться чистим і зрозумілим.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>7. Рекомендований порядок навчання</h2>
+
+      <h3>Етап 1. Git і GitHub</h3>
+      <p>
+        Студент створює локальний проєкт, робить commit і push у власний
+        GitHub-репозиторій.
+      </p>
+
+      <h3>Етап 2. Codex CLI</h3>
+      <p>
+        Студент запускає Codex CLI у своєму проєкті та просить створити
+        або покращити файли.
+      </p>
+
+      <h3>Етап 3. GitHub Pages</h3>
+      <p>
+        Студент створює просту HTML-презентацію і публікує її через GitHub Pages.
+      </p>
+
+      <h3>Етап 4. Каталог робіт</h3>
+      <p>
+        Викладач додає посилання на студентські роботи в <code>prompt_party</code>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>8. Правило безпеки</h2>
+      <p>
+        Не треба працювати напряму в гілці <code>main</code>, якщо зміни робить
+        Codex CLI або інший AI-інструмент.
+      </p>
+
+      <p>Краще створити окрему гілку:</p>
+
+      <pre><code>git switch -c add-payment-validation</code></pre>
+
+      <p>
+        Після перевірки змін можна зробити commit і push.
+        Це допомагає не зламати основну версію проєкту.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>9. Коротко</h2>
+
+      <p>Студент:</p>
+
+      <pre><code>читає завдання → створює свій проєкт → працює з Git/GitHub → використовує Codex CLI → робить презентацію → здає посилання</code></pre>
+
+      <p>Викладач:</p>
+
+      <pre><code>публікує завдання → перевіряє роботи → додає посилання на найкращі результати в каталог</code></pre>
+
+      <p>
+        Головна ідея: не складати всі студентські файли в один репозиторій,
+        а використовувати <code>prompt_party</code> як чисту навігаційну платформу
+        для завдань, прикладів і результатів.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
